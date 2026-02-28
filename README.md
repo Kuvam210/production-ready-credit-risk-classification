@@ -100,41 +100,44 @@ This makes the system adaptable to real-world financial policy constraints.
 ---
 
 ## Repository Structure
+## Repository Structure
+
+```
 Credit-Risk-Classification/
 │
 ├── Notebooks/
-│ ├── 01_EDA_Preprocessing.ipynb
-│ ├── 02_Model_Developement.ipynb
-│ └── 03_Model_Evaluation.ipynb
-|
+│   ├── 01_EDA_Preprocessing.ipynb
+│   ├── 02_Model_Development.ipynb
+│   └── 03_Model_Evaluation.ipynb
+│
 ├── Models/
-│ ├── decision_tree.pkl
-│ ├── logistic_regression.pkl
-│ ├── random_forest.pkl
-│ └── xgboost.pkl
-|
+│   ├── decision_tree.pkl
+│   ├── logistic_regression.pkl
+│   ├── random_forest.pkl
+│   └── xgboost.pkl
+│
 ├── Data/
-│ ├── X_test.pkl
-│ ├── X_train.pkl
-│ ├── y_train.pkl
-│ ├── y_train.pkl
-|
+│   ├── X_train.pkl
+│   ├── X_test.pkl
+│   ├── y_train.pkl
+│   └── y_test.pkl
+│
 ├── Evaluation_Metrics/
-│ ├── all_model_metrics.pkl
-|
+│   └── all_model_metrics.pkl
+│
 ├── Report/
-│ ├── Technical_Report.pdf
+│   └── Technical_Report.pdf
 │
 ├── Visualizations/
-│ ├── Confusion_matrices.png
-│ ├── Correlation_heatmap.png
-│ ├── Feature_importance.png
-│ ├── Precision_recall_curve_xgboost.png
-│ └── ROC_curve.png
-|
+│   ├── Confusion_matrices.png
+│   ├── Correlation_heatmap.png
+│   ├── Feature_importance.png
+│   ├── Precision_recall_curve_xgboost.png
+│   └── ROC_curve.png
+│
 ├── requirements.txt
 └── README.md
-
+```
 ---
 
 ## How to Run
