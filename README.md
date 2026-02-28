@@ -82,7 +82,18 @@ Business-sensitive interpretation prioritized recall for high-risk detection.
 - XGBoost delivered the best balance between recall and precision.
 - SMOTE significantly improved minority-class detection.
 - Feature importance analysis revealed strong influence from credit amount, loan duration, and existing credit history.
+---
 
+## Model Performance
+
+| Model | Accuracy | Recall (Bad Risk) | F1-Score (Bad Risk) | ROC-AUC |
+|-------|----------|-------------------|----------------------|---------|
+| XGBoost | 0.875 | 0.8228 | 0.8387 | 0.9408 |
+| Random Forest | 0.850 | 0.7595 | 0.8000 | 0.9250 |
+| Decision Tree | 0.820 | 0.8228 | 0.7831 | 0.8691 |
+| Logistic Regression | 0.775 | 0.6709 | 0.7020 | 0.8402 |
+
+> XGBoost selected as the best model — highest ROC-AUC (0.9408) and strongest recall for bad-risk detection.
 ---
 
 ## Business Interpretation
@@ -99,7 +110,19 @@ This makes the system adaptable to real-world financial policy constraints.
 
 ---
 
-## Repository Structure
+## Results
+
+### ROC Curve
+![ROC Curve](Visualizations/ROC_curve.png)
+
+### Feature Importance
+![Feature Importance](Visualizations/Feature_importance.png)
+
+### Confusion Matrices
+![Confusion Matrices](Visualizations/Confusion_matrices.png)
+
+---
+
 ## Repository Structure
 
 ```
@@ -143,7 +166,7 @@ Credit-Risk-Classification/
 ## How to Run
 
 1. Clone the repository:
-   git clone https://github.com/yourusername/yourrepo.git
+   git clone https://github.com/Kuvam210/production-ready-credit-risk-classification.git
 
 
 2. Install dependencies:
